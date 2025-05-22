@@ -8,17 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>My Website</title>
+  <title>Code Craft Studio</title>
+  
+<!-- SweetAlert2 CSS & JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
-<body>
+<body class="body-style">
+  
   <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1><span>M</span>udassar <span>Q</span>azi</h1>
+            <h1 id="cap"> < / <span>C</span>ode <span>C</span>raft <span>S</span>tudio > </h1>
           </a>
         </div>
         <div class="nav-list">
@@ -43,7 +48,7 @@
     <div class="hero container">
       <div>
         <h1>Hello, <span></span></h1>
-        <h1>Welcome to my <span></span></h1>
+        <h1>Welcome to our <span></span></h1>
         <h1>Portfolio <span></span></h1>
         <a href="#projects" type="button" class="cta">Portfolio</a>
       </div>
@@ -55,39 +60,34 @@
   <section id="services">
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>As a full stack web developer, I offer a comprehensive range of services to meet all your web 
-          development needs. With expertise in both front-end and back-end technologies, I can deliver robust, scalable, and high-performance solutions tailored to your specific requirements.</p>
+        <h1 class="section-title" style="color: aliceblue;">Serv<span>i</span>ces</h1>
+        <p style="color: aliceblue;">As a front-end web developers, we specialize in creating visually engaging, user-friendly, and fully responsive interfaces. With a strong command of modern front-end technologies and design principles, we deliver seamless user experiences that align with your brand and meet your business objectives.</p>
       </div>
 
       <div class="service-bottom">
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
           <h2>Front-End Development</h2>
-          <p>I specialize in front-end development, crafting visually stunning and interactive websites using HTML, 
-            CSS, and JavaScript. My focus is on creating responsive and user-friendly designs that provide an 
-            exceptional user experience across all devices and browsers.</p>
+<p>We specialize in front-end development, focusing on crafting clean, modern, and intuitive layouts using HTML, CSS, and JavaScript. Our goal is to translate ideas into visually appealing designs that enhance brand identity and user engagement.</p>
+
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Back-End Development</h2>
-          <p>I handle back-end development to ensure your web applications are robust and efficient. 
-            By using server side technologies like Node.js, JavaScript and others, I manage databases, 
-            develop APIs, and implement security measures to support seamless and scalable functionality</p>
+          <h2>Responsive Design</h2>
+<p>We build fully responsive websites that look and function flawlessly across all screen sizes and devices. Using flexible grids, media queries, and mobile-first design principles, We ensure a smooth experience on mobile, tablet, and desktop.</p>
+
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Maintenance & Support</h2>
-          <p>I offer maintenance and support services to keep your website running smoothly. This includes 
-            regular updates, bug fixes, and performance optimizations. I provide ongoing technical support 
-            to promptly address any issues, ensuring your website remains secure and efficient.</p>
+          <h2>Interactive Animations</h2>
+          <p>We enhance user experiences with smooth animations and micro-interactions using CSS transitions, JavaScript, and libraries like GSAP or Framer Motion. These subtle effects add life to the interface and keep users engaged.</p>
+          
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Consulting & Training</h2>
-          <p>I provide consulting and training services to help you make informed decisions about your web 
-            development projects. Through expert advice and training sessions, I empower you and your team to
-            stay current with the latest technologies and best practices in web development.</p>
+          <h2>Optimized Front-End Performance</h2>
+<p>Beyond visuals, We focus on performance optimization—minimizing load times, optimizing assets, and writing clean code to ensure fast, efficient, and accessible front-end experiences for all users.</p>
+
         </div>
       </div>
     </div>
@@ -95,90 +95,69 @@
   <!-- End Service Section -->
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects"> 
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
+        <h1 class="section-title" style="color: aliceblue;" >Recent <span>Projects</span></h1>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Netflix Clone</h2>
-            <p>This project is a faithful recreation of the Netflix cover page, made using only HTML and CSS. The design is sleek, modern, 
-              and responsive, ensuring optimal viewing on desktops, tablets, and smartphones. Using CSS Flexbox and Grid, the layout closely mimics Netflix’s 
-              intuitive structure and branding, with custom fonts and icons enhancing the visual appeal. This project deepened my understanding of advanced HTML 
-              and CSS techniques, particularly in creating responsive and consistent designs across various screen sizes.</p>
+      <!-- ============= project 1 ==================== -->
+          <div class="container py-5">
+    <div class="row g-2">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-12 col-12">
+        <div class="card custom-card">
+          <div class="card-img-container">
+            <img src="./img/project1.png" class="card-img-top" alt="Card Image 1"/>
           </div>
-          <div class="project-img">
-            <img src="./img/netflix.png.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Spotify Clone</h2>
-            <p>This project is a precise recreation of the Spotify cover page, created using only HTML and CSS. The design captures the sleek and modern look 
-              of Spotify, ensuring a responsive layout that works seamlessly on desktops, tablets, and smartphones. Leveraging CSS Flexbox and Grid, the page 
-              closely mirrors Spotify's intuitive structure, with custom fonts and icons to enhance visual authenticity. This project deepened my expertise in 
-              advanced HTML and CSS techniques, particularly in crafting responsive and visually consistent designs across various devices.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/spotify.png.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Image Slider Gallery</h2>
-            <p>
-              This project is a dynamic slide gallery, created using HTML, CSS, and JavaScript. The gallery features a responsive design, ensuring a seamless
-               experience on desktops, tablets, and smartphones. Using HTML for structure, CSS for styling, and JavaScript for interactivity, the slide gallery allows 
-               users to smoothly navigate through images with intuitive controls. This project enhanced my skills in front-end development, particularly in integrating 
-               JavaScript to create interactive and engaging user experiences while maintaining a visually appealing and responsive layout.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/imageslider.png.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Beauty Salon Website</h2>
-            <p>This project is a professional website for a beauty parlour, designed and developed for a client using HTML, CSS, and JavaScript. The website features 
-              a modern and elegant design, showcasing the beauty parlour's services, team, and contact information. It is fully responsive, ensuring an optimal viewing 
-              experience on desktops, tablets, and smartphones. The site provides an engaging user experience. 
-              This project allowed me to apply my web development skills to create a visually appealing and functional website tailored to the client's needs, enhancing my expertise in delivering user-friendly web solutions.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/salon.png.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Construction Website</h2>
-            <p>This project is a comprehensive website for a construction company, developed using HTML, CSS, and JavaScript. The site features a robust, professional design that highlights the company's services, and contact details. 
-              It is fully responsive, ensuring seamless functionality and an optimal viewing experience across desktops, tablets, and smartphones. The website provides a user-friendly
-               experience. This project enhanced my web development skills, particularly in creating responsive and visually appealing designs tailored to the construction industry, demonstrating my ability to deliver customized web solutions for diverse clients.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/construction.png.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 6</h1>
-            <h2>Movie Website</h2>
-            <p>A dynamic platform developed using HTML, CSS, JavaScript, and API integration. This site offers a comprehensive collection of movie ratings, covering both new releases and classic films. With a user-friendly interface and real-time updates,
-               you can easily search for any movie and instantly view its ratings. Whether you're a casual movie-goer or a film enthusiast, this website provides an all-in-one solution for staying informed about the latest and greatest in cinema. Explore 
-               and enjoy the world of movies with accurate and up-to-date information at your fingertips!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/Movie.png.png" alt="img">
+          <div class="card-body">
+            <h5 class="card-title">Adventure Awaits</h5>
+            <p class="card-text">
+              Explore the beauty of untouched landscapes with breathtaking views.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-12 col-12">
+        <div class="card custom-card">
+          <div class="card-img-container">
+            <img src="./img/project1.png" class="card-img-top" alt="Card Image 2"/>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nature & Peace</h5>
+            <p class="card-text">
+              Disconnect to reconnect. Find peace in the serenity of nature.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-12 col-12">
+        <div class="card custom-card">
+          <div class="card-img-container">
+            <img src="./img/project1.png" class="card-img-top" alt="Card Image 3"/>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">City Lights</h5>
+            <p class="card-text">
+              Discover the vibrant energy of city nights and the stories they hold.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+            
+            
+            
+            
+      
     </div>
   </section>
   <!-- End Projects Section -->
@@ -188,31 +167,31 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="./img/img2.png.jpg" alt="img">
+          <img src="./img/cdb2e0c8-0752-4929-b019-3595faf0730e.jpg" alt="img">
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Full Stack Web Developer</h2>
-        <p>Welcome to my portfolio. I'm Mudassar Qazi, a passionate Full Stack Web Developer dedicated to bringing innovative and dynamic web solutions to life. 
+        <h1 class="section-title"  style="color: aliceblue;">About <span>us</span></h1>
+        <h2  style="color: aliceblue;">Full Stack Web Developer</h2>
+        <p  style="color: aliceblue;">Welcome to my portfolio. I'm Mudassar Qazi, a passionate Full Stack Web Developer dedicated to bringing innovative and dynamic web solutions to life. 
           With a blend of creativity and technical expertise, I transform ideas into compelling digital experiences.
 
-          <li>My Journey</li>
-        <p>My journey into web development began with a fascination for how the web connects people and businesses worldwide. This curiosity drove me to master 
+          <li  style="color: aliceblue;">My Journey</li>
+        <p  style="color: aliceblue;">My journey into web development began with a fascination for how the web connects people and businesses worldwide. This curiosity drove me to master 
           both front-end and back-end technologies, allowing me to build holistic solutions that are not only visually appealing but also functionally robust.</p>
           
-          <li>My Philosophy</li>
-          <p>I believe in the power of the web to make a meaningful impact. Whether it’s a simple landing page or a complex web application, my approach is rooted 
+          <li  style="color: aliceblue;">My Philosophy</li>
+          <p  style="color: aliceblue;">I believe in the power of the web to make a meaningful impact. Whether it’s a simple landing page or a complex web application, my approach is rooted 
           in creating user-centric designs and writing clean, efficient code. I am committed to delivering high-quality, scalable solutions tailored to meet the 
           unique needs of each project.</p>
           
-          <li>Skills and Expertise</li>
-          <p>With expertise in a wide array of technologies, including HTML, CSS, JavaScript, React, Node.js, and Python, I am equipped to handle every aspect of 
+          <li  style="color: aliceblue;">Skills and Expertise</li>
+          <p  style="color: aliceblue;">With expertise in a wide array of technologies, including HTML, CSS, JavaScript, React, Node.js, and Python, I am equipped to handle every aspect of 
           web development. From designing intuitive user interfaces to developing secure and efficient server-side applications, I ensure a seamless integration 
           between the front and back end.</p>
           
-          <li>Why Work With Me?</li>
-          <p>Holistic Solutions: As a full stack developer, I provide end-to-end solutions, ensuring a cohesive and integrated approach to web development.
+          <li  style="color: aliceblue;">Why Work With Me?</li>
+          <p  style="color: aliceblue;">Holistic Solutions: As a full stack developer, I provide end-to-end solutions, ensuring a cohesive and integrated approach to web development.
           Client-Centric Approach: I prioritize understanding your needs and goals to deliver solutions that drive success.
           Continuous Learning: In the ever-evolving field of web development, I stay updated with the latest trends and technologies to offer cutting-edge solutions.
           Quality and Reliability: I am committed to delivering high-quality work on time and within budget, ensuring your satisfaction and trust.
@@ -227,28 +206,28 @@
   <section id="contact">
     <div class="contact container">
       <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
+        <h1 class="section-title"  style="color: aliceblue;">Contact <span>info</span></h1>
       </div>
       <div class="contact-items">
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
           <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+92 333 0966188</h2>
+            <h1  style="color: aliceblue;">Phone</h1>
+            <h2  style="color: aliceblue;">+92 315 2391653</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
-            <h1>Email</h1>
-            <h2>mudassarqazi901@gmail.com</h2>
+            <h1  style="color: aliceblue;">Email</h1>
+            <h2  style="color: aliceblue;">codecraftdtudio@gmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
           <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Abbottabad, Pakistan</h2>
+            <h1  style="color: aliceblue;">Address</h1>
+            <h2  style="color: aliceblue;">Karachi , Sindh, Pakistan</h2>
           </div>
         </div>
       </div>
@@ -260,9 +239,9 @@
   <section id="footer">
     <div class="footer container">
       <div class="brand">
-        <h1><span>M</span>udassar <span>Q</span>azi</h1>
+        <h1  style="color: aliceblue;"><span>C</span>ode <span>C</span>raft <span>S</span>tudio</h1>
       </div>
-      <h2>Your Complete Web Solution</h2>
+      <h2  style="color: aliceblue;">Your Complete Web Solution</h2>
       <div class="social-icon">
         <div class="social-item">
           <a href="https://www.facebook.com/mudassar.qazi.106">
@@ -278,11 +257,15 @@
         </div>  
         </div>
       </div>
-      <p>Copyright © 2024 Mudassar. All rights reserved</p>
+      <p  style="color: aliceblue;">Copyright © 2025 Iqra Maryam. All rights reserved</p>
     </div>
   </section>
   <!-- End Footer -->
+   <!-- Hidden audio element -->
+  <audio id="introAudio" src="./recording.mp3"></audio>
   <script src="./app.js"></script>
+
+ 
 </body>
 
 </html>

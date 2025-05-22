@@ -23,3 +23,24 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+// //==============audio functionality=============//
+window.addEventListener("load", () => {
+      setTimeout(() => {
+        const audio = document.getElementById("introAudio");
+
+        // Try playing audio
+        audio.play().then(() => {
+          console.log("Audio played successfully");
+        }).catch((err) => {
+          console.warn("Autoplay blocked. Waiting for user interaction...");
+
+          // Play after first user click
+          const playOnClick = () => {
+            audio.play();
+            document.removeEventListener("click", playOnClick);
+          };
+
+          document.addEventListener("click", playOnClick);
+        });
+      }, 2000);
+    });

@@ -4,6 +4,79 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* }//=============background animation ==========// */
+.body-style {
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    background-image: linear-gradient(
+      32deg,
+      rgba(8, 8, 8, 0.74) 30px,
+      transparent
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+  }
+  body {
+ 
+  color: #fff;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1f1f1f;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-container {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-top {
+  transition: transform 6s linear;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-img-container:hover .card-img-top {
+  transform: translateY(-60%);
+}
+
+.card-img-container:not(:hover) .card-img-top {
+  transform: translateY(0);
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-title {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* }//=============background animation end ==========// */
+
+
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -68,7 +141,7 @@ p {
 }
 .cta:hover {
 	color: rgb(249, 249, 249);
-	background-color: lightseagreen
+	background-color:rgb(248, 219, 3);
 }
 .brand h1 {
 	font-size: 3rem;
@@ -207,9 +280,14 @@ p {
 /* End Header section */
 
 /* Hero Section */
+#cap{
+	text-transform: capitalize;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #hero {
-	background-image: url(./img/hero-bg.png);
+	/* background-image: url(./img/lastback.avif); */
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -221,7 +299,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	/* background-color: black; */
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -299,12 +377,13 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/backgroundimage.png.jpg);
+	background-image: url(./img/cardsback.webp);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	
 }
 #services .service-item::after {
 	content: '';
@@ -333,80 +412,6 @@ p {
 	text-align: left;
 }
 /* End Services Section */
-
-/* Projects section */
-#projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-#projects .projects-header h1 {
-	margin-bottom: 50px;
-}
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-#projects .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
-	color: red;
-}
-#projects .project-info h2 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-top: 10px;
-	color: yellow;
-}
-#projects .project-info p {
-	color: white;
-}
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.3;
-}
-#projects .project-img img {
-	transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
-}
 /* End Projects section */
 
 /* About Section */
