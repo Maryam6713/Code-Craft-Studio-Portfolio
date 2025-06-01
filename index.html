@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
   integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <title>Code Craft Studio</title>
   
 <!-- SweetAlert2 CSS & JS -->
@@ -23,7 +25,7 @@
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1 id="cap"> < / <span>C</span>ode <span>C</span>raft <span>S</span>tudio > </h1>
+            <h1 id="cap"> < / <span>CCS</span> > </h1>
           </a>
         </div>
         <div class="nav-list">
@@ -48,8 +50,8 @@
     <div class="hero container">
       <div>
         <h1>Hello, <span></span></h1>
-        <h1>Welcome to our <span></span></h1>
-        <h1>Portfolio <span></span></h1>
+        <h1>Welcome to <span></span></h1>
+        <h1>Code Craft Studio<span></span></h1>
         <a href="#projects" type="button" class="cta">Portfolio</a>
       </div>
     </div>
@@ -93,73 +95,209 @@
     </div>
   </section>
   <!-- End Service Section -->
-
+ <div class="projects-header text-center my-5">
+      <h1 class="section-title" style="color: aliceblue;">Recent <span>Projects</span></h1>
+    </div>
   <!-- Projects Section -->
-  <section id="projects"> 
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title" style="color: aliceblue;" >Recent <span>Projects</span></h1>
-      </div>
-      <!-- ============= project 1 ==================== -->
-          <div class="container py-5">
-    <div class="row g-2">
+<section class="cards-section">
 
-      <!-- Card 1 -->
-      <div class="col-lg-4 col-md-12 col-12">
-        <div class="card custom-card">
-          <div class="card-img-container">
-            <img src="./img/project1.png" class="card-img-top" alt="Card Image 1"/>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Adventure Awaits</h5>
-            <p class="card-text">
-              Explore the beauty of untouched landscapes with breathtaking views.
-            </p>
-          </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/balaji.png" alt="Project 1">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 1</h2>
+          <p>This is the description of project 1. It's informative and looks great.</p>
+          <a href="#">Read More</a>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-lg-4 col-md-12 col-12">
-        <div class="card custom-card">
-          <div class="card-img-container">
-            <img src="./img/project1.png" class="card-img-top" alt="Card Image 2"/>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Nature & Peace</h5>
-            <p class="card-text">
-              Disconnect to reconnect. Find peace in the serenity of nature.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-lg-4 col-md-12 col-12">
-        <div class="card custom-card">
-          <div class="card-img-container">
-            <img src="./img/project1.png" class="card-img-top" alt="Card Image 3"/>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">City Lights</h5>
-            <p class="card-text">
-              Discover the vibrant energy of city nights and the stories they hold.
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-
-
-            
-            
-            
-            
-      
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/cake-Section.png" alt="Project 2">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 2</h2>
+          <p>This is the description of project 2. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
     </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/car-sec.png" alt="Project 3">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 3</h2>
+          <p>This is the description of project 3. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/project-ramadan-calender.png" alt="Project 4">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 4</h2>
+          <p>This is the description of project 4. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/roll-dice.png" alt="Project 5">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 5</h2>
+          <p>This is the description of project 5. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/calender.png" alt="Project 6">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 6</h2>
+          <p>This is the description of project 6. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/chatboard.png" alt="Project 7">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 7</h2>
+          <p>This is the description of project 7. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/wordgues.png" alt="Project 8">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 8</h2>
+          <p>This is the description of project 8. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/trello.png" alt="Project 9">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 9</h2>
+          <p>This is the description of project 9. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/todo-app.png" alt="Project 10">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 10</h2>
+          <p>This is the description of project 10. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/Passwoed-generator.png" alt="Project 11">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 11</h2>
+          <p>This is the description of project 11. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/insta.png" alt="Project 12">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 12</h2>
+          <p>This is the description of project 12. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/iqraTrello.png" alt="Project 13">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 13</h2>
+          <p>This is the description of project 13. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/calendae.png" alt="Project 14">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 14</h2>
+          <p>This is the description of project 14. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./img/maryam6713.github.io_login-signup_ (1).png" alt="Project 15">
+        </div>
+        <div class="card-back">
+          <h2>Project Title 15</h2>
+          <p>This is the description of project 15. It's informative and looks great.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    
   </section>
+
   <!-- End Projects Section -->
 
   <!-- About Section -->

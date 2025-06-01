@@ -1,0 +1,46 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box-two{
+    background-color:#97CDD2;
+}
+.box-one{
+    margin-top: 20%;
+}
+.head-one{
+    margin-top: 10%;
+   
+}
+h1{
+    font-size: 300%;
+}
+.para{
+    margin-top: 10%;
+}
+p{
+    color: grey;
+}
+
+.btn-one{
+    background-color: #92EBF1 ;
+    border-radius: 20px;
+   
+}
+.btn-one:hover{
+    background-color: white;
+    color: #92EBF1;
+}
+@media  screen and (min-width:250px) and (max-width:472px) {
+    h1{
+        font-size: 230%;
+    }
+    .para{
+        margin-top:5% ;
+    }
+    .btn-one{
+        margin-top: 5%;
+    }
+}
