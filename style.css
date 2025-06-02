@@ -286,7 +286,7 @@ p {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #hero {
-	/* background-image: url(./img/lastback.avif); */
+	background-image: url(./img/back.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -348,6 +348,7 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
+/* ================images styling========== */
 
 /* End Hero Section */
 
@@ -674,6 +675,7 @@ body {
 	}
 
 	/* Hero */
+	
 	#hero h1 {
 		font-size: 7rem;
 	}
